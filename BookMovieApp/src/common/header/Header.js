@@ -11,8 +11,7 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import InputLabel from '@material-ui/core/InputLabel';
 import logo from '../../assets/logo.svg';
-import './Header.css';
-
+import './Header.css'
 class Header extends Component {
 
     constructor(props) {
