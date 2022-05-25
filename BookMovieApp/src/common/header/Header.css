@@ -1,33 +1,45 @@
-
-/*Styling for header element*/
-.header-container {
-    background: #222;
+.header-movies-app {
+    background-color: #222;
     height: 36px;
     padding: 8px 32px 8px 16px;
 }
 
-/*Styling for App Logo*/
-.app-logo {
+.logo-movies-app {
     background: #ff7f7f;
     height: 35px;
-    animation: app-logo-rotate infinite 8s linear;
+    animation: rotate-by-resizing-app-logo infinite 8s linear;
+    float: left;
 }
 
-/*
-The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).
-Its result is a <transform-function> data type.
-*/
-@keyframes app-logo-rotate {
-    from { transform: scaleX(-1); }
+@keyframes rotate-by-resizing-app-logo {
+    from {transform: scaleX(-1);}
 }
 
-/* Login or Logout button should be on the right of the header. */
-.login-logout-button {
+.button-login-at-header {
     float: right;
 }
 
-/* "Book Show" button should be on the right of the header. To create space b/n buttons margin added towards right. */
-.book-show-button {
+.button-logout-at-header {
+    float: right;
+}
+
+.button-book-show {
     float: right;
     margin-right: 8px;
+}
+
+.tabs-registration-login {
+    margin-bottom: 20px;
+}
+
+.displayOff {
+    display: none;
+}
+
+.displayOn {
+    display: block;
+}
+
+.highlight-error-in-red {
+    color: red;
 }
