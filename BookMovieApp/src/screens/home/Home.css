@@ -1,4 +1,4 @@
-/*Styling heading of upcoming movies*/
+/* Styling heading of upcoming movies */
 .heading-upcoming-movies {
     background: #ff9999;
     padding: 8px;
@@ -6,7 +6,37 @@
     font-size: 1rem;
 }
 
-/*Styling of scroll-bar for upcoming movies grid*/
+/* Styling of movie poster in grid tiles */
+.poster-of-movies {
+    height: 100%;
+    width: auto;
+}
+
+/* Styling of element - Grid of released movies along with filters */
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+    margin: 16px;
+}
+
+.left-of-flex-container {
+    width: 76%;
+    margin: 16px;
+}
+
+.right-of-flex-container {
+    padding-top: 20px;
+    width: 24%;
+    margin: 16px;
+}
+
+.released-movie-tile {
+    margin: 16px;
+}
+
+/* Additional styling of scroll-bar for upcoming movies grid */
 ::-webkit-scrollbar {
     width: 4px;
 }
@@ -25,8 +55,17 @@
     background: grey;
 }
 
-/* Styling of movie poster in grid tiles */
-.poster-of-movies {
-    height: 100%;
-    width: auto;
+@media (max-width: 992px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .left-of-flex-container {
+        width: 100%;
+    }
+    .right-of-flex-container {
+        width: 90%;
+    }
+    .released-movie-tile {
+        margin: 8px;
+    }
 }
